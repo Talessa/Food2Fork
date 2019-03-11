@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Food2Fork</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="logo">Logotipo</string>
+    <string name="title_activity_listas">ListasActivity</string>
+    <string name="tab_text_1">A-Z</string>
+    <string name="tab_text_2">Ranquing</string>
+    <string name="tab_text_3">Id</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
