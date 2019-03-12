@@ -1,4 +1,4 @@
-package com.talessa.food2fork;
+package com.talessa.food2fork.view;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,9 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
+import com.talessa.food2fork.GlideApp;
+import com.talessa.food2fork.R;
+import com.talessa.food2fork.model.Receta;
 
 import java.util.ArrayList;
 import java.util.List;

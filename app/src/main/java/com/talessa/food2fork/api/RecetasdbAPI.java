@@ -1,4 +1,6 @@
-package com.talessa.food2fork;
+package com.talessa.food2fork.api;
+
+import com.talessa.food2fork.view.RecetasListFragment;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

@@ -1,4 +1,4 @@
-package com.talessa.food2fork;
+package com.talessa.food2fork.model;
 
 public class Receta {
 
