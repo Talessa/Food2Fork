@@ -38,7 +38,7 @@ public class RecetasListFragment extends Fragment {
         recyclerView.setAdapter(recetaListAdapter);
 
         ViewModel = ViewModelProviders.of(this).get(RecetasViewModel.class);
-        ViewModel.getMovies().observe(this, new Observer<List<Receta>>() {
+        ViewModel.getRecetas().observe(this, new Observer<List<Receta>>() {
             @Override
             public void onChanged(@Nullable List<Receta> recetas) {
                 recetaListAdapter.recetaList = recetas;

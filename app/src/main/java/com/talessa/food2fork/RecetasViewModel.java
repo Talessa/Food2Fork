@@ -17,7 +17,7 @@ public class RecetasViewModel extends AndroidViewModel {
         recetadbRepository = new RecetadbRepository();
     }
 
-    public LiveData<List<Receta>> getMovies(){
+    public LiveData<List<Receta>> getRecetas(){
         return recetadbRepository.getRecetas();
     }
 }

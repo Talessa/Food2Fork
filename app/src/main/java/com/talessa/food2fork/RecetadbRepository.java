@@ -6,6 +6,7 @@ import android.arch.lifecycle.MutableLiveData;
 import com.talessa.food2fork.api.RecetasdbAPI;
 import com.talessa.food2fork.api.RecetasdbModule;
 import com.talessa.food2fork.model.Receta;
+import com.talessa.food2fork.model.SearchResult;
 import com.talessa.food2fork.view.RecetasListFragment;
 
 import java.util.List;
@@ -26,15 +27,14 @@ public class RecetadbRepository {
     public LiveData<List<Receta>> getRecetas(){
         final MutableLiveData<List<Receta>> lista = new MutableLiveData<>();
 
-        recetasdbAPI.getRecetas().enqueue(new Callback<RecetasListFragment>() {
+        recetasdbAPI.getRecetas().enqueue(new Callback<SearchResult>() {
             @Override
-            public void onResponse(Call<RecetasListFragment> call, Response<RecetasListFragment> response) {
-              //lista.setValue(response.body().results);
+            public void onResponse(Call<SearchResult> call, Response<SearchResult> response) {
+             lista.setValue(response.body().recipes);
             }
 
             @Override
-            public void onFailure(Call<RecetasListFragment> call, Throwable t) {
-
+            public void onFailure(Call<SearchResult> call, Throwable t) {
             }
         });
         return lista;
