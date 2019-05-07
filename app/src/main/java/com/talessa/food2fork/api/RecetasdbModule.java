@@ -43,8 +43,10 @@ class ApiKeyInterceptor implements Interceptor {
         HttpUrl originalHttpUrl = original.url();
 
         HttpUrl url = originalHttpUrl.newBuilder()
-                .addQueryParameter("api_key", "873f288fde87b585abe51c377bcd8ffa")
+                .addQueryParameter("key", "873f288fde87b585abe51c377bcd8ffa")
                 .build();
+
+        Log.e("APIKEY LALALA", "fkdjasñkjlskadf");
 
         Request.Builder requestBuilder = original.newBuilder()
                 .url(url);

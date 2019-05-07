@@ -29,7 +29,7 @@ public class RecetaListAdapter extends RecyclerView.Adapter<RecetaListAdapter.Re
         holder.id.setText(""+receta.recipe_id);
         holder.titulo.setText(receta.title);
         holder.ranquing.setText(""+receta.social_rank);
-        GlideApp.with(holder.itemView.getContext()).load(receta.image_url).into(holder.imagenReceta);
+        GlideApp.with(holder.itemView.getContext()).load(receta.image_url.replace("http://", "https://")).into(holder.imagenReceta);
         holder.web.setText(receta.source_url);
     }
     public int getItemCount(){

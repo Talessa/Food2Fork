@@ -2,6 +2,7 @@ package com.talessa.food2fork;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
+import android.util.Log;
 
 import com.talessa.food2fork.api.RecetasdbAPI;
 import com.talessa.food2fork.api.RecetasdbModule;
@@ -30,7 +31,7 @@ public class RecetadbRepository {
         recetasdbAPI.getRecetas().enqueue(new Callback<SearchResult>() {
             @Override
             public void onResponse(Call<SearchResult> call, Response<SearchResult> response) {
-             lista.setValue(response.body().recipes);
+                lista.setValue(response.body().recipes);
             }
 
             @Override
