@@ -1,3 +1,5 @@
+package com.talessa.food2fork;
+
 import com.talessa.food2fork.model.Receta;
 
 import java.util.List;
